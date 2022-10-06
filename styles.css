@@ -4,6 +4,7 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
     box-sizing: border-box;
 }
 
@@ -27,4 +28,38 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 65px;
+}
+
+.navbar .menu__items {
+    display: flex;
+}
+
+.navbar .menu__items li a {
+    color: #0e2431;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.7rem;
+}
+
+.navbar .menu__items li a:hover {
+    font-weight: 700;
+}
+
+.nav__container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav__container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
 }
